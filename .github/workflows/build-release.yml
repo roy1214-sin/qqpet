@@ -99,7 +99,6 @@ jobs:
         shell: bash
         run: ${{ matrix.command }}
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CSC_IDENTITY_AUTO_DISCOVERY: false
 
       - name: Add architecture to Windows package filename
@@ -118,6 +117,7 @@ jobs:
           }
           $newName = "QQPet-$env:PACKAGE_VERSION-windows-$env:PACKAGE_ARCH.exe"
           Rename-Item -LiteralPath $files[0].FullName -NewName $newName
+          Write-Host "Renamed Windows package to $newName"
 
       - name: Upload package artifact
         uses: actions/upload-artifact@v4
