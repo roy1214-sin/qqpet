@@ -1,3 +1,4 @@
+import './linux-mouse-compat'
 import { app, clipboard, dialog, ipcMain, net, powerMonitor, session, shell } from 'electron'
 import { IPC, type TrayMenuItem, type TrayState } from '../shared/ipc'
 import type { SavePatch, Sex } from '../shared/save'
