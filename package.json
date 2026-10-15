@@ -39,22 +39,5 @@
     "esbuild@0.25.12": true,
     "esbuild@0.28.2": true,
     "fsevents@2.3.3": true
-  },
-  "desktopName": "com.qqpet.app",
-  "build": {
-    "appId": "com.qqpet.app",
-    "linux": {
-      "syncDesktopName": true,
-      "target": [
-        "deb",
-        "AppImage"
-      ],
-      "category": "Utility",
-      "maintainer": "roy1214-sin <roy1214-sin@users.noreply.github.com>"
-    }
-  },
-  "author": {
-    "name": "roy1214-sin",
-    "email": "roy1214-sin@users.noreply.github.com"
   }
 }
