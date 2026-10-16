@@ -1,3 +1,4 @@
+import './linux-mouse-compat'
 import { spawn } from 'node:child_process'
 import { existsSync } from 'node:fs'
 import { app, clipboard, dialog, ipcMain, net, powerMonitor, session, shell } from 'electron'
